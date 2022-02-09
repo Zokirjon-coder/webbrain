@@ -3,16 +3,22 @@
 :root{
   --fira: 'Fira Code', monospace;
   --inter: 'Inter', sans-serif;
-  --mani-blue: #0076F5;
+  --blue: #0076F5;
+  --text-color: #1B1A18;
+  --larg-fz: 79px;
+  --medium-fz: 44px;
+  --normal-fz: 16px;
 }
 
 * {
-  font-family: var(--fira);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body{
-  background: #e5e5e5;
+  background: #F5FAFF;
+  color: var(--text-color);
+  font-family: var(--inter);
+  font-size: var(--normal-fz);
 }
