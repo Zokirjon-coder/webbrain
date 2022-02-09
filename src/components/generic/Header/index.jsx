@@ -4,14 +4,11 @@ import { HEADER } from './style';
 import { dataMenu } from '../../../utils/dataMenu';
 import {
     NavLink,
-    useLocation,
     useNavigate,
 } from 'react-router-dom'
-import Toggle from './Toggle';
 
 const Header = () => {
 
-    const location = useLocation();
     const navigate = useNavigate();
 
     return <HEADER>
@@ -36,9 +33,6 @@ const Header = () => {
             </HEADER.MENU>
             <HEADER.LOGIN>
                 <FLEX justify='flex-end' style={{gap: '20px'}}>
-                    {
-                        location.pathname==='/asosiy' ? <Toggle /> : null
-                    }
                     <BUTTON_OUTLINE onClick={()=>navigate('/login')}>Login</BUTTON_OUTLINE>
                 </FLEX>
             </HEADER.LOGIN>

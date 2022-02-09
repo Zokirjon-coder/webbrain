@@ -8,6 +8,13 @@
   --larg-fz: 79px;
   --medium-fz: 44px;
   --normal-fz: 16px;
+  --bgColor: #F5FAFF;
+}
+
+@media screen and (max-width: 400px) {
+  :root{
+    --blue: red;
+  }
 }
 
 * {
@@ -17,7 +24,7 @@
 }
 
 body{
-  background: #F5FAFF;
+  background: var(--bgColor);
   color: var(--text-color);
   font-family: var(--inter);
   font-size: var(--normal-fz);
