@@ -11,6 +11,7 @@ to{
 
 export const Container = styled.div`
   position: fixed;
+  z-index: 999;
   top: 200px;
   left: 0;
 `;
@@ -45,7 +46,7 @@ export const DrowerSettings = styled.div`
   height: 148px;
   transition: transform 0.3s 0.4s ease-in-out;
   transform: translateX(${({ show }) => (show ? "0" : "-100%")});
-  background: #f5faff;
+  background: var(--bgColor);
   box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);
   border-radius: 0px 10px 10px 0px;
 `;
@@ -53,7 +54,7 @@ export const DrowerSettings = styled.div`
 DrowerSettings.Topbar = styled.div`
   width: 100%;
   height: 56px;
-  background: #f0f7ff;
+  background: var(--bgColor);
   border-radius: 0px 10px 0px 0px;
   display: flex;
   align-items: center;

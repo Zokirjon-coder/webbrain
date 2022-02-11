@@ -6,7 +6,7 @@ export const CARD = styled.div`
     left: 207px;
     top: 2335px;
 
-background: #F5FAFF;
+background: var(--bgColor);
 /* Drop Shadow */
 
 border-radius: 10px;
@@ -34,7 +34,7 @@ span{
     line-height: 26px;
     margin: 8px 0;
     text-align: center;
-    color: #514D48;
+    color: var(--text-color);
     width: 350px;
 }
 
@@ -44,7 +44,7 @@ p{
     font-weight: 500;
     font-size: 25px;
     line-height: 34px;
-    color: #1B1A18;
+    color: var(--text-color);
     margin: 8px 0;
 }
 button{

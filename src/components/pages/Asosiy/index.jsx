@@ -61,6 +61,7 @@ const Asosiy = () => {
             alignItems: "center",
             justifyContent: "space-between",
             flexWrap: "wrap",
+            gap: '15px',
           }}
         >
           {dataStatusCard.map((card) => (

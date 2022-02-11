@@ -16,6 +16,7 @@ svg{
     stroke-dasharray: 2000;
     stroke-dashoffset: 400;
     animation: ${({show})=>show? dash : null} 2s linear forwards;
+    fill: var(--text-color);
 }
 `
 

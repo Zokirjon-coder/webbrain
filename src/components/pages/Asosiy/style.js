@@ -178,7 +178,7 @@ export const CERTIFICATE = styled.div`
     font-size: 44px;
     line-height: 52px;
     letter-spacing: -0.06em;
-    color: #1b1a18;
+    color: var(--text-color);
     margin: 5px 0 25px;
   }
   margin: 50px 0 100px;
@@ -199,7 +199,7 @@ export const CERTIFICATE = styled.div`
       font-weight: 500;
       font-size: 25px;
       line-height: 34px;
-      color: #1b1a18;
+      color: var(--text-color);
     }
     p {
       font-family: var(--inter);

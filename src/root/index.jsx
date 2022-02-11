@@ -1,5 +1,5 @@
-import React from "react";
-import { CONTAINER } from "./style";
+import React, {useContext} from "react";
+import { CONTAINER, darkMode, GlobalStyle, lightMode } from "./style";
 import Header from "../components/generic/Header";
 import {
   BrowserRouter as Router,
@@ -10,10 +10,14 @@ import {
 import { dataMenu } from "../utils/dataMenu";
 import Footer from "../components/Footer";
 import Settings from "../components/generic/Settings";
+import { ThemeProvider } from "styled-components";
+import { CommentApi } from "../context/CommentContext";
 
 const Root = () => {
+  const [state]=useContext(CommentApi);
   return (
-    <div>
+    <ThemeProvider theme={state.darkMode?darkMode:lightMode}>
+      <GlobalStyle />
       <Router>
         <CONTAINER>
           <Header />
@@ -32,7 +36,7 @@ const Root = () => {
         </CONTAINER>
         <Footer />
       </Router>
-    </div>
+    </ThemeProvider>
   );
 };
 

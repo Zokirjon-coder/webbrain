@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CARD = styled.div`
-    background: #F5FAFF; 
+    background: var(--bgColor); 
     width: 354px;
     height: 246px;
     box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);
@@ -29,7 +29,7 @@ span{
     margin-top: 20px;
     line-height: 52px;
     letter-spacing: -0.06em;
-    color: #1B1A18;
+    color: var(--text-color);
 }
 
 p{
@@ -38,6 +38,6 @@ p{
     font-weight: normal;
     font-size: 25px;
     line-height: 34px;
-    color: #514D48;
+    color: var(--text-color);
 }
 `;

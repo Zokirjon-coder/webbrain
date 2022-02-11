@@ -4,7 +4,7 @@ export const CARD = styled.div`
 /* padding: 15px; */
     width: 354px;
     height: 460px;
-    background: #F5FAFF;
+    background: var(--bgColor);
     border-radius: 10px;
     cursor: pointer;
 &:hover{
@@ -28,7 +28,7 @@ span{
     font-size: 16px;
     line-height: 26px;
     margin: 8px 0;
-    color: #514D48;
+    color: var(--text-color);
     width: 100%;
 }
 
@@ -38,7 +38,7 @@ p{
     font-weight: 500;
     font-size: 25px;
     line-height: 34px;
-    color: #1B1A18;
+    color: var(--text-color);
     margin: 8px 0;
 }
 button{

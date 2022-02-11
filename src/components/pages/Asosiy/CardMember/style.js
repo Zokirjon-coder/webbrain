@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CARD = styled.div`
 width: 354px;
 height: 476px;
-background: #F5FAFF;
+background: var(--bgColor);
 box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);
 border-radius: 10px;
 cursor: pointer;
@@ -34,7 +34,7 @@ justify-content: center;
     line-height: 26px;
     margin: 8px 0;
     text-align: center;
-    color: #514D48;
+    color: var(--text-color);
     width: 300px;
 }
 
@@ -44,7 +44,7 @@ p{
     font-weight: 500;
     font-size: 25px;
     line-height: 34px;
-    color: #1B1A18;
+    color: var(--text-olor);
     margin: 8px 0;
 }
 
