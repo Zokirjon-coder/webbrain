@@ -43,6 +43,7 @@ LANDING.BTNS = styled.div`
   display: flex;
   gap: 15px;
   width: 100%;
+  margin-top: 15px;
   button {
     width: 30%;
   }
@@ -67,6 +68,7 @@ LANDING.IMAGE = styled.div`
 `;
 
 export const STATISTIKA = styled.div`
+margin-top: 70px;
   h1 {
     font-family: var(--fira);
     font-style: normal;
@@ -74,7 +76,7 @@ export const STATISTIKA = styled.div`
     font-size: 44px;
     line-height: 52px;
     letter-spacing: -0.06em;
-    color: #1b1a18;
+    color: var(--text-color);
   }
 `;
 
@@ -87,7 +89,7 @@ export const BIZHAQIMIZDA = styled.div`
     font-size: 44px;
     line-height: 52px;
     letter-spacing: -0.06em;
-    color: #1b1a18;
+    color: var(--text-color);
   }
 
   .left {
@@ -119,7 +121,7 @@ export const BIZHAQIMIZDA = styled.div`
       font-weight: 500;
       font-size: 25px;
       line-height: 34px;
-      color: #1b1a18;
+      color: var(--text-color);
     }
     p {
       font-family: var(--inter);
@@ -142,11 +144,12 @@ export const KURSLAR = styled.div`
     font-size: 44px;
     line-height: 52px;
     letter-spacing: -0.06em;
-    color: #1b1a18;
+    color: var(--text-color);
   }
 `;
 
 export const BEPULDARSLAR = styled.div`
+margin-top: 50px;
   h1 {
     font-family: var(--fira);
     font-style: normal;
@@ -154,11 +157,12 @@ export const BEPULDARSLAR = styled.div`
     font-size: 44px;
     line-height: 52px;
     letter-spacing: -0.06em;
-    color: #1b1a18;
+    color: var(--text-color);
   }
 `;
 
 export const TEAM = styled.div`
+margin-top: 50px;
   h1 {
     font-family: var(--fira);
     font-style: normal;
@@ -166,11 +170,12 @@ export const TEAM = styled.div`
     font-size: 44px;
     line-height: 52px;
     letter-spacing: -0.06em;
-    color: #1b1a18;
+    color: var(--text-color);
   }
 `;
 
 export const CERTIFICATE = styled.div`
+margin-top: 15px;
   h1 {
     font-family: var(--fira);
     font-style: normal;

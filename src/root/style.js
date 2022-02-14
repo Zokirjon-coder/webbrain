@@ -19,10 +19,24 @@ export const GlobalStyle = createGlobalStyle`
   --fira: 'Fira Code', monospace;
   --inter: 'Inter', sans-serif;
   --blue: #0076F5;
-  --text-color: ${({theme})=>theme.fontColor};
+  --text-color: ${({ theme }) => theme.fontColor};
   --larg-fz: 79px;
   --medium-fz: 44px;
   --normal-fz: 16px;
-  --bgColor: ${({theme})=>theme.bgColor};
+  --bgColor: ${({ theme }) => theme.bgColor};
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  border-radius: 10px;
+  :hover{
+  background: #0076F550;
+  }
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--blue);
+  border-radius: 8px;
+  margin: 0 1px;
 }
 `;

@@ -40,9 +40,9 @@ const Asosiy = () => {
             beruvchi <span>markaz</span>
           </LANDING.HEADING>
           <LANDING.BTNS>
-            <BUTTON_SOLID onClick={() => navigate("/kurslarimiz")}>
+            <BUTTON_OUTLINE onClick={() => navigate("/kurslarimiz")}>
               Kurslarimiz
-            </BUTTON_SOLID>
+            </BUTTON_OUTLINE>
             <BUTTON_OUTLINE onClick={() => navigate("/")}>Aloqa</BUTTON_OUTLINE>
           </LANDING.BTNS>
         </LANDING>

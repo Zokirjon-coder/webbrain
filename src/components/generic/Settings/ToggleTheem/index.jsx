@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { COMMENTTGL } from './style'
 import { CommentApi } from '../../../../context/CommentContext';
 
-
 const Toggle = () => {
     const [state, dispatch] = useContext(CommentApi);
     return (

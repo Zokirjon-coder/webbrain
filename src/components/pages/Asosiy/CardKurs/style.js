@@ -1,32 +1,33 @@
 import styled from "styled-components";
 
 export const CARD = styled.div`
-    width: 482px;
-    height: 436px;
-    left: 207px;
-    top: 2335px;
+  width: calc(100% / 3 - 30px);
 
-background: var(--bgColor);
-/* Drop Shadow */
+  @media screen and (max-width: 1250px){
+      width: calc(50% - 15px);
+  }
+  @media screen and (max-width: 820px){
+      width: calc(100%);
+  }
 
-border-radius: 10px;
-
-cursor: pointer;
-&:hover{
+  background: var(--bgColor);
+  border-radius: 10px;
+  cursor: pointer;
+  &:hover {
     box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
-    }
+  }
 `;
 
 CARD.BODY = styled.div`
-width: 100%;
-height: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-/* padding: 15px; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
 
-span{
+  span {
     font-family: var(--inter);
     font-style: normal;
     font-weight: normal;
@@ -35,10 +36,10 @@ span{
     margin: 8px 0;
     text-align: center;
     color: var(--text-color);
-    width: 350px;
-}
+    max-width: 350px;
+  }
 
-p{
+  p {
     font-family: var(--inter);
     font-style: normal;
     font-weight: 500;
@@ -46,8 +47,8 @@ p{
     line-height: 34px;
     color: var(--text-color);
     margin: 8px 0;
-}
-button{
+  }
+  button {
     /* Blue */
     all: unset;
     margin-top: 8px;
@@ -59,10 +60,10 @@ button{
     border-radius: 10px;
     padding: 12px 36px;
     border: 1px solid var(--blue);
-    &:hover{
-    box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);
-    color: white;
-    background: #0076F5;
-}
-}
+    &:hover {
+      box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);
+      color: white;
+      background: #0076f5;
+    }
+  }
 `;

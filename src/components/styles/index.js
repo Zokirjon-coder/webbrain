@@ -19,6 +19,11 @@ cursor: pointer;
 width: ${({width}) => width};
 :active{
     transform: scale(.99);
+} 
+:hover{
+    box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);
+    color: white;
+    background: #0076F5;
 }
 `
 

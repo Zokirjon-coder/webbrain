@@ -1,20 +1,26 @@
 import React, { createContext, useReducer } from 'react';
 
-const reduce = (state, action)=>{
+const reduce = ({showComment, darkMode}, action)=>{
 switch(action.type){
     case 'comment':
-        return {showComment: !state.showComment};
+        return ({
+            showComment: !showComment, 
+            darkMode
+        });
     case 'theem':
-        return {darkMode: !state.darkMode};
+        return ({
+            showComment, 
+            darkMode: !darkMode
+        });
     default: 
         throw new Error()
 }
 }
 
+const initialVal = {showComment: false, darkMode: false};
 export const CommentApi = createContext();
-
 const CommentContext = ({children}) => {
-    const [state, dispatch] = useReducer(reduce, {showComment: false, darkMode: false})
+    const [state, dispatch] = useReducer(reduce, initialVal)
 
     return <CommentApi.Provider value={[state, dispatch]}>
         {children   }

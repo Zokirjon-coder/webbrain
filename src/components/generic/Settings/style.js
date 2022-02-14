@@ -28,7 +28,7 @@ Container.Toggle = styled.div`
   align-items: center;
   justify-content: end;
   padding-right: 16px;
-  transition: transform 0.3s 0.1s ease-in-out;
+  transition: transform 0.3s 0.2s ease-in-out;
   transform: translateX(${({ hide }) => (hide ? "-100%" : "0")});
   box-shadow: 4px 8px 16px rgba(0, 118, 245, 0.4);
   cursor: pointer;
@@ -44,7 +44,8 @@ export const DrowerSettings = styled.div`
   left: 0;
   width: 200px;
   height: 148px;
-  transition: transform 0.3s 0.4s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition-delay: ${({show})=>show?'0.4s':'0'};
   transform: translateX(${({ show }) => (show ? "0" : "-100%")});
   background: var(--bgColor);
   box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.15);
