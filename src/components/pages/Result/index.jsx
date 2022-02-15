@@ -1,15 +1,34 @@
 import React from "react";
 import { LANDING, Students } from "./style";
 import IMG from "../../../assets/images/Asosiy_landing.png";
-import { dataStudents } from "../../../utils/dataStudents";
+import CardMember from'./CardMember'
 
 const Result = () => {
-  console.log(dataStudents);
-  const Reapeet = (num) =>{
-    let imgs = []
-    for(let i=0; i<num; i++) imgs.push(<img src={IMG} />);
-    return imgs
-  }
+  const [usersData, setUsersData] = React.useState([]);
+ 
+  const getUsers = async () => {
+    await fetch("https://randomuser.me/api/?results=12")
+      .then((data) => data.json())
+      .then((result) => {
+        let text =
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices cras rutrum eu lacus. Amet, eros, neque porta sapien dignissim ut nisi ultricies.";
+        let final = [];
+        let i = 0;
+        result.results.forEach((user) => {
+          final[i] = {
+            id: i,
+            name: user.name.first + " " + user.name.last,
+            img: user.picture.medium,
+            status: (i % 2 === 0 ? "Frontend" : "Backend") + " dasturchi",
+            text: text,
+          }; i++
+        });
+        setUsersData(final);
+      });
+  };
+  React.useEffect(() => {
+    getUsers();
+  }, []);
   return (
     <>
       <LANDING>
@@ -20,11 +39,11 @@ const Result = () => {
       </LANDING>
       <Students>
         {
-          dataStudents.then(data=>data).map((user)=><p>{user.name}</p>)
+            usersData.map((user) => <div  key={user.id} className='student'><CardMember info={user} /></div>)
         }
       </Students>
     </>
   );
 };
 
-export default Result;
+export default React.memo(Result);

@@ -18,36 +18,33 @@ LANDING.HEADING = styled.h1`
 `;
 
 export const Students = styled.div`
-  > * {
-    width: 100%;
-    height: 250px;
-  }
+  padding: 100px 0;
+  display: grid;
+  grid-gap: 0px 15px;
+
   @media screen and (min-width: 1050px) {
-    columns: 4;
-    img:nth-child(4),
-    img:nth-child(10) {
-      margin-top: 55px;
+    grid-template-columns: repeat(4, 1fr);
+    .student:nth-child(2n),
+    .student:nth-child(2n) {
+      margin-top: -55px;
     }
   }
   @media screen and (max-width: 1050px) {
-    columns: 3;
-    img {
+    grid-template-columns: repeat(3, 1fr);
+    .student:nth-child(n) {
       margin: 0;
     }
-    img:nth-child(5) {
-      margin-top: 55px;
+    .student:nth-child(3n+2) {
+      margin-top: -55px;
     }
   }
-  @media screen and (max-width: 800px) {
-    columns: 2;
-    img:nth-child(5) {
+  @media screen and (max-width: 968px) {
+    grid-template-columns: repeat(2, 1fr);
+    .student:nth-child(n) {
       margin-top: 0;
     }
   }
   @media screen and (max-width: 570px) {
-    columns: 1;
-    img {
-      margin: 0;
-    }
+    grid-template-columns: 1fr;
   }
 `;

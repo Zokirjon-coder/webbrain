@@ -2,6 +2,7 @@ import Asosiy from "../pages/Asosiy";
 import Kurslarimiz from "../pages/Kurslarimiz";
 import Youtube from "../pages/Youtube";
 import Natijalar from '../pages/Natijalar';
+import BizningJamoa from "../pages/BizningJamoa";
 import Generic from "../pages/Generic";
 
 export const dataMenu = [
@@ -30,7 +31,7 @@ export const dataMenu = [
     id: 4,
     title: "Bizning jamoa",
     pathname: "/bizningjamoa",
-    Element: Generic,
+    Element: BizningJamoa,
     hidden: false,
   },
   {

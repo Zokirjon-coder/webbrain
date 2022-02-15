@@ -2,6 +2,9 @@ import styled, { createGlobalStyle } from "styled-components";
 
 export const CONTAINER = styled.div`
   padding: 80px 90px 0;
+  @media screen and (max-width: 375px) {
+  padding: 80px 28px 0;
+  }
 `;
 
 export const darkMode = {
@@ -22,8 +25,19 @@ export const GlobalStyle = createGlobalStyle`
   --text-color: ${({ theme }) => theme.fontColor};
   --larg-fz: 79px;
   --medium-fz: 44px;
-  --normal-fz: 16px;
+  --normal-fz: 25px;
+  --smaller-fz: 19px;
+  --small-fz: 16px;
   --bgColor: ${({ theme }) => theme.bgColor};
+}
+
+@media screen and (max-width: 375px) {
+  :root{
+    --medium-fz: 33px;
+    --normal-fz: 19px;
+    --smaller-fz: 16px;
+    --small-fz: 14px;
+  }
 }
 
 ::-webkit-scrollbar{

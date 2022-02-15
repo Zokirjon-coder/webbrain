@@ -40,9 +40,9 @@ const Asosiy = () => {
             beruvchi <span>markaz</span>
           </LANDING.HEADING>
           <LANDING.BTNS>
-            <BUTTON_OUTLINE onClick={() => navigate("/kurslarimiz")}>
+            <BUTTON_SOLID onClick={() => navigate("/kurslarimiz")}>
               Kurslarimiz
-            </BUTTON_OUTLINE>
+            </BUTTON_SOLID>
             <BUTTON_OUTLINE onClick={() => navigate("/")}>Aloqa</BUTTON_OUTLINE>
           </LANDING.BTNS>
         </LANDING>
@@ -121,7 +121,7 @@ const Asosiy = () => {
       <BEPULDARSLAR>
         <SECHEADING>
           <h1>Bepul darslar</h1>
-          <a onClick={() => navigate("/darslar")}>Barcha kurslar {'>'} </a>
+          <a onClick={() => navigate("/youtube")}>Barcha kurslar {'>'} </a>
         </SECHEADING>
         <FLEX
           style={{
